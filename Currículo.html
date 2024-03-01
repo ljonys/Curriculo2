@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Pedro - Currículo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #c1e1ec, #5393e0);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 800px;
+            text-align: left;
+            position: relative;
+            transition: all 0.3s ease;
+            display: flex; /* Adicionado para alinhar a foto ao lado do conteúdo */
+        }
+
+        #profile-pic {
+            border-radius: 50%;
+            width: 210px;
+            height: 210px;
+            object-fit: cover;
+            margin-left: 20px; /* Espaçamento à esquerda do conteúdo principal */
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            background-color: hsl(210, 67%, 59%);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        #skills {
+            margin-top: 20px;
+        }
+
+        /* Efeitos hover */
+        #container:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            transform: scale(1.02);
+        }
+
+        #profile-pic:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1>João Pedro Eiras</h1>
+            <p>Desenvolvedor Web</p>
+            <p>Endereço: Rua ABC, Bairro</p>
+            <p>Email: <a href="mailto:jonys33yu@gmail.com">jonys33yu@gmail.com</a></p>
+            <p>Telefone: (22) 99201-1883</p>
+            <p>Instagram: <a href="https://www.instagram.com/joaopedroeirass/" target="_blank">https://www.instagram.com/joaopedroeirass/</a></p>
+            <p>GitHub: <a href="https://github.com/ljonys" target="_blank">https://github.com/ljonys</a></p>
+            <p>Site: <a href="https://ljonys.github.io/Curriculo/" target="_blank">https://ljonys.github.io/Curriculo/</a></p>
+
+            <div id="skills">
+                <h2>Sobre MIm</h2>
+                <ul>
+                    <li>Sou um jovem de 17 anos chamado João Pedro buscando aprender sobre programação e tudo ao seu redor. Me interessei por essa matéria quando conheci a Unity onde fiz o meu primeiro contato com programação tentando criar um jogo em C#.</li>
+                    
+                </ul>
+            </div>
+
+            <div id="skills">
+                <h2>Habilidades Técnicas em Desenvolvimento</h2>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+
+            <div id="experience">
+                <h2>Estudos</h2>
+                <p><strong>CIência da Computação</strong> - Universidade Vila Velha (2024 - EM CURSO) </p>
+                <ul>
+                    <li>Desenvolvimento e manutenção de sistemas web</li>
+                    <li>Desenvolvimento de jogos com C#</li>
+                    <li>Desenvolvimento de jogos com Javascript</li>
+                </ul>
+            </div>
+        </div>
+        <img id="profile-pic" src="file:///C:/Users/joaop/OneDrive/%C3%81rea%20de%20Trabalho/foto.jpg" alt="Sua Foto">
+    </div>
+</body>
+</html>
