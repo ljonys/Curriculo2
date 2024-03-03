@@ -27,6 +27,7 @@
             position: relative;
             transition: all 0.3s ease;
             display: flex; /* Adicionado para alinhar a foto ao lado do conteúdo */
+            flex-wrap: wrap; /* Adicionado para lidar com tamanhos de tela menores */
         }
 
         #profile-pic {
@@ -35,6 +36,7 @@
             height: 210px;
             object-fit: cover;
             margin-left: 20px; /* Espaçamento à esquerda do conteúdo principal */
+            margin-bottom: 20px; /* Adicionado espaçamento abaixo da foto */
             transition: transform 0.3s ease;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
@@ -75,8 +77,8 @@
             border-radius: 5px;
         }
 
-        #skills {
-            margin-top: 20px;
+        #about-me, #skills, #experience {
+            width: 100%; /* Garante que ocupem 100% da largura em telas menores */
         }
 
         /* Efeitos hover */
@@ -87,6 +89,13 @@
 
         #profile-pic:hover {
             transform: scale(1.1);
+        }
+
+        /* Ajustes para telas menores */
+        @media screen and (max-width: 600px) {
+            #profile-pic {
+                margin-left: 0; /* Remove a margem na esquerda */
+            }
         }
     </style>
 </head>
@@ -102,12 +111,10 @@
             <p>GitHub: <a href="https://github.com/ljonys" target="_blank">https://github.com/ljonys</a></p>
             <p>Site: <a href="https://ljonys.github.io/Curriculo/" target="_blank">https://ljonys.github.io/Curriculo/</a></p>
 
-            <div id="skills">
-                <h2>Sobre MIm</h2>
-                <ul>
-                    <li>Sou um jovem de 17 anos chamado João Pedro buscando aprender sobre programação e tudo ao seu redor. Me interessei por essa matéria quando conheci a Unity onde fiz o meu primeiro contato com programação tentando criar um jogo em C#.</li>
-                    
-                </ul>
+            <div id="about-me">
+                <h2>Sobre Mim</h2>
+                <p>Sou um jovem de 17 anos chamado João Pedro buscando aprender sobre programação e tudo ao seu redor. Me interessei por essa matéria quando conheci a Unity onde fiz o meu primeiro contato com programação tentando criar um jogo em C#.</p>
+                <!-- Adicione mais informações sobre você conforme necessário -->
             </div>
 
             <div id="skills">
