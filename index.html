@@ -21,13 +21,14 @@
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            width: 80%;
+            width: 90%; /* Aumentei a largura para melhor adaptação em dispositivos móveis */
             max-width: 800px;
             text-align: left;
             position: relative;
             transition: all 0.3s ease;
-            display: flex; /* Adicionado para alinhar a foto ao lado do conteúdo */
-            flex-wrap: wrap; /* Adicionado para lidar com tamanhos de tela menores */
+            display: flex;
+            flex-direction: column; /* Alterado para uma orientação de coluna em telas menores */
+            align-items: center; /* Centraliza o conteúdo na horizontal */
         }
 
         #profile-pic {
@@ -35,8 +36,7 @@
             width: 210px;
             height: 210px;
             object-fit: cover;
-            margin-left: 20px; /* Espaçamento à esquerda do conteúdo principal */
-            margin-bottom: 20px; /* Adicionado espaçamento abaixo da foto */
+            margin-bottom: 20px;
             transition: transform 0.3s ease;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
@@ -77,10 +77,6 @@
             border-radius: 5px;
         }
 
-        #about-me, #skills, #experience {
-            width: 100%; /* Garante que ocupem 100% da largura em telas menores */
-        }
-
         /* Efeitos hover */
         #container:hover {
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
@@ -90,60 +86,51 @@
         #profile-pic:hover {
             transform: scale(1.1);
         }
-
-        /* Ajustes para telas menores */
-        @media screen and (max-width: 600px) {
-            #profile-pic {
-                margin-left: 0; /* Remove a margem na esquerda */
-            }
-        }
     </style>
 </head>
 <body>
     <div id="container">
-        <div>
-            <h1>João Pedro Eiras</h1>
-            <p>Desenvolvedor Web</p>
-            <p>Endereço: Rua ABC, Bairro</p>
-            <p>Email: <a href="mailto:jonys33yu@gmail.com">jonys33yu@gmail.com</a></p>
-            <p>Telefone: (22) 99201-1883</p>
-            <p>Instagram: <a href="https://www.instagram.com/joaopedroeirass/" target="_blank">https://www.instagram.com/joaopedroeirass/</a></p>
-            <p>GitHub: <a href="https://github.com/ljonys" target="_blank">https://github.com/ljonys</a></p>
-            <p>Site: <a href="https://ljonys.github.io/Curriculo/" target="_blank">https://ljonys.github.io/Curriculo/</a></p>
-
-            <div id="about-me">
-                <h2>Sobre Mim</h2>
-                <p>Sou um jovem de 17 anos chamado João Pedro buscando aprender sobre programação e tudo ao seu redor. Me interessei por essa matéria quando conheci a Unity onde fiz o meu primeiro contato com programação tentando criar um jogo em C#.</p>
-                <!-- Adicione mais informações sobre você conforme necessário -->
-            </div>
-
-            <div id="skills">
-                <h2>Habilidades Técnicas em Desenvolvimento</h2>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>C#</li>
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>SQL</li>
-                    <li>Git</li>
-                </ul>
-            </div>
-
-            <div id="experience">
-                <h2>Estudos</h2>
-                <p><strong>CIência da Computação</strong> - Universidade Vila Velha (2024 - EM CURSO) </p>
-                <ul>
-                    <li>Desenvolvimento e manutenção de sistemas web</li>
-                    <li>Desenvolvimento de jogos com C#</li>
-                    <li>Desenvolvimento de jogos com Javascript</li>
-                </ul>
-            </div>
-        </div>
         <img id="profile-pic" src="foto.jpg" alt="Sua Foto">
+        <h1>João Pedro Eiras</h1>
+        <p>Desenvolvedor Web</p>
+        <p>Endereço: Rua ABC, Bairro</p>
+        <p>Email: <a href="mailto:jonys33yu@gmail.com">jonys33yu@gmail.com</a></p>
+        <p>Telefone: (22) 99201-1883</p>
+        <p>Instagram: <a href="https://www.instagram.com/joaopedroeirass/" target="_blank">https://www.instagram.com/joaopedroeirass/</a></p>
+        <p>GitHub: <a href="https://github.com/ljonys" target="_blank">https://github.com/ljonys</a></p>
+        <p>Site: <a href="https://ljonys.github.io/Curriculo/" target="_blank">https://ljonys.github.io/Curriculo/</a></p>
+
+        <div id="about-me">
+            <h2>Sobre Mim</h2>
+            <p>Sou um jovem de 17 anos chamado João Pedro buscando aprender sobre programação e tudo ao seu redor. Me interessei por essa matéria quando conheci a Unity onde fiz o meu primeiro contato com programação tentando criar um jogo em C#.</p>
+            <!-- Adicione mais informações sobre você conforme necessário -->
+        </div>
+
+        <div id="skills">
+            <h2>Habilidades Técnicas em Desenvolvimento</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>SQL</li>
+                <li>Git</li>
+            </ul>
+        </div>
+
+        <div id="experience">
+            <h2>Estudos</h2>
+            <p><strong>CIência da Computação</strong> - Universidade Vila Velha (2024 - EM CURSO) </p>
+            <ul>
+                <li>Desenvolvimento e manutenção de sistemas web</li>
+                <li>Desenvolvimento de jogos com C#</li>
+                <li>Desenvolvimento de jogos com Javascript</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
